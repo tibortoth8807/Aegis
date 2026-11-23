@@ -1,0 +1,5652 @@
+{
+ "generated": "tools/generate-demo-data.ts",
+ "personas": {
+  "employee": "E10033",
+  "manager": "E10010",
+  "owner": "E10004",
+  "hr": "E10002",
+  "security": "E10006",
+  "admin": "E10007"
+ },
+ "countries": [
+  {
+   "code": "HU",
+   "name": "Hungary",
+   "eea": true
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "eea": true
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "eea": true
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia",
+   "eea": true
+  },
+  {
+   "code": "RO",
+   "name": "Romania",
+   "eea": true
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "eea": true
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "eea": true
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "eea": true
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "eea": true
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "eea": true
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "eea": true
+  },
+  {
+   "code": "CZ",
+   "name": "Czechia",
+   "eea": true
+  },
+  {
+   "code": "HR",
+   "name": "Croatia",
+   "eea": true
+  },
+  {
+   "code": "RS",
+   "name": "Serbia",
+   "eea": false
+  },
+  {
+   "code": "UA",
+   "name": "Ukraine",
+   "eea": false
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "eea": false
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom",
+   "eea": false
+  },
+  {
+   "code": "US",
+   "name": "United States",
+   "eea": false
+  },
+  {
+   "code": "TR",
+   "name": "Türkiye",
+   "eea": false
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "eea": false
+  }
+ ],
+ "locations": [
+  {
+   "name": "Budapest",
+   "country": "HU"
+  },
+  {
+   "name": "Debrecen",
+   "country": "HU"
+  },
+  {
+   "name": "Vienna",
+   "country": "AT"
+  },
+  {
+   "name": "Berlin",
+   "country": "DE"
+  },
+  {
+   "name": "Lisbon",
+   "country": "PT"
+  },
+  {
+   "name": "Remote",
+   "country": ""
+  }
+ ],
+ "departments": [
+  {
+   "code": "EXE",
+   "name": "Executive Office",
+   "teams": [
+    {
+     "name": "Leadership",
+     "lead": "E10001"
+    }
+   ]
+  },
+  {
+   "code": "HR",
+   "name": "People & Culture",
+   "teams": [
+    {
+     "name": "HR Operations",
+     "lead": "E10002"
+    },
+    {
+     "name": "Talent Acquisition",
+     "lead": "E10008"
+    }
+   ]
+  },
+  {
+   "code": "FIN",
+   "name": "Finance",
+   "teams": [
+    {
+     "name": "Accounting",
+     "lead": "E10003"
+    },
+    {
+     "name": "Controlling",
+     "lead": "E10009"
+    }
+   ]
+  },
+  {
+   "code": "SAL",
+   "name": "Sales",
+   "teams": [
+    {
+     "name": "Sales Central Europe",
+     "lead": "E10004"
+    },
+    {
+     "name": "Sales Analytics",
+     "lead": "E10010"
+    },
+    {
+     "name": "Customer Success",
+     "lead": "E10011"
+    }
+   ]
+  },
+  {
+   "code": "ENG",
+   "name": "Engineering",
+   "teams": [
+    {
+     "name": "Platform",
+     "lead": "E10005"
+    },
+    {
+     "name": "Identity & Access",
+     "lead": "E10012"
+    },
+    {
+     "name": "Web Applications",
+     "lead": "E10013"
+    },
+    {
+     "name": "Data Engineering",
+     "lead": "E10014"
+    }
+   ]
+  },
+  {
+   "code": "SEC",
+   "name": "Information Security",
+   "teams": [
+    {
+     "name": "Security Operations",
+     "lead": "E10006"
+    }
+   ]
+  },
+  {
+   "code": "ITS",
+   "name": "IT Services",
+   "teams": [
+    {
+     "name": "Service Desk",
+     "lead": "E10007"
+    },
+    {
+     "name": "Workplace IT",
+     "lead": "E10015"
+    }
+   ]
+  }
+ ],
+ "employees": [
+  {
+   "number": "E10001",
+   "first": "Tímea",
+   "last": "Farkas",
+   "title": "Chief Executive Officer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Leadership",
+   "startDaysAgo": 713,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "timea.farkas@aegis.example"
+  },
+  {
+   "number": "E10002",
+   "first": "Sándor",
+   "last": "Lakatos",
+   "title": "Head of People & Culture",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "HR Operations",
+   "manager": "E10001",
+   "startDaysAgo": 1868,
+   "roles": [
+    "Employee",
+    "Manager",
+    "Hr"
+   ],
+   "email": "sandor.lakatos@aegis.example"
+  },
+  {
+   "number": "E10003",
+   "first": "Olena",
+   "last": "Shevchenko",
+   "title": "Chief Financial Officer",
+   "type": "Internal",
+   "nationality": "UA",
+   "location": "Debrecen",
+   "team": "Accounting",
+   "manager": "E10001",
+   "startDaysAgo": 3022,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "olena.shevchenko@aegis.example"
+  },
+  {
+   "number": "E10004",
+   "first": "Gergő",
+   "last": "Kovács",
+   "title": "Head of Sales",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Sales Central Europe",
+   "manager": "E10001",
+   "startDaysAgo": 205,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "gergo.kovacs@aegis.example"
+  },
+  {
+   "number": "E10005",
+   "first": "Priya",
+   "last": "Patel",
+   "title": "Chief Technology Officer",
+   "type": "Internal",
+   "nationality": "IN",
+   "location": "Remote",
+   "team": "Platform",
+   "manager": "E10001",
+   "startDaysAgo": 1838,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "priya.patel@aegis.example"
+  },
+  {
+   "number": "E10006",
+   "first": "Mia",
+   "last": "Gruber",
+   "title": "Chief Information Security Officer",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "Security Operations",
+   "manager": "E10001",
+   "startDaysAgo": 481,
+   "roles": [
+    "Employee",
+    "Manager",
+    "SecurityOfficer"
+   ],
+   "email": "mia.gruber@aegis.example"
+  },
+  {
+   "number": "E10007",
+   "first": "Márton",
+   "last": "Papp",
+   "title": "Head of IT Services",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Service Desk",
+   "manager": "E10005",
+   "startDaysAgo": 2591,
+   "roles": [
+    "Employee",
+    "Manager",
+    "Admin"
+   ],
+   "email": "marton.papp@aegis.example"
+  },
+  {
+   "number": "E10008",
+   "first": "Réka",
+   "last": "Szabó",
+   "title": "Talent Acquisition Lead",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Talent Acquisition",
+   "manager": "E10002",
+   "startDaysAgo": 2774,
+   "roles": [
+    "Employee",
+    "Manager",
+    "Hr"
+   ],
+   "email": "reka.szabo@aegis.example"
+  },
+  {
+   "number": "E10009",
+   "first": "Arjun",
+   "last": "Patel",
+   "title": "Head of Controlling",
+   "type": "Internal",
+   "nationality": "IN",
+   "location": "Remote",
+   "team": "Controlling",
+   "manager": "E10003",
+   "startDaysAgo": 2134,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "arjun.patel@aegis.example"
+  },
+  {
+   "number": "E10010",
+   "first": "Anna",
+   "last": "Oláh",
+   "title": "Sales Analytics Manager",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Sales Analytics",
+   "manager": "E10004",
+   "startDaysAgo": 2203,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "anna.olah@aegis.example"
+  },
+  {
+   "number": "E10011",
+   "first": "Sándor",
+   "last": "Papp",
+   "title": "Customer Success Manager",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Customer Success",
+   "manager": "E10004",
+   "startDaysAgo": 2158,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "sandor.papp@aegis.example"
+  },
+  {
+   "number": "E10012",
+   "first": "Tímea",
+   "last": "Papp",
+   "title": "Engineering Manager, Identity & Access",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Identity & Access",
+   "manager": "E10005",
+   "startDaysAgo": 1591,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "timea.papp@aegis.example"
+  },
+  {
+   "number": "E10013",
+   "first": "Ioana",
+   "last": "Popescu",
+   "title": "Engineering Manager, Web Applications",
+   "type": "Internal",
+   "nationality": "RO",
+   "location": "Budapest",
+   "team": "Web Applications",
+   "manager": "E10005",
+   "startDaysAgo": 407,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "ioana.popescu@aegis.example"
+  },
+  {
+   "number": "E10014",
+   "first": "Péter",
+   "last": "Oláh",
+   "title": "Engineering Manager, Data",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Data Engineering",
+   "manager": "E10005",
+   "startDaysAgo": 1422,
+   "roles": [
+    "Employee",
+    "Manager"
+   ],
+   "email": "peter.olah@aegis.example"
+  },
+  {
+   "number": "E10015",
+   "first": "Gergő",
+   "last": "Horváth",
+   "title": "Workplace IT Lead",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Workplace IT",
+   "manager": "E10007",
+   "startDaysAgo": 2452,
+   "roles": [
+    "Employee",
+    "Manager",
+    "Admin"
+   ],
+   "email": "gergo.horvath@aegis.example"
+  },
+  {
+   "number": "E10016",
+   "first": "Mia",
+   "last": "Huber",
+   "title": "HR Administrator",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "HR Operations",
+   "manager": "E10002",
+   "startDaysAgo": 3181,
+   "roles": [
+    "Employee",
+    "Hr"
+   ],
+   "email": "mia.huber@aegis.example"
+  },
+  {
+   "number": "E10017",
+   "first": "Ioana",
+   "last": "Ionescu",
+   "title": "HR Administrator",
+   "type": "Internal",
+   "nationality": "RO",
+   "location": "Budapest",
+   "team": "HR Operations",
+   "manager": "E10002",
+   "startDaysAgo": 3028,
+   "roles": [
+    "Employee",
+    "Hr"
+   ],
+   "email": "ioana.ionescu@aegis.example"
+  },
+  {
+   "number": "E10018",
+   "first": "Inês",
+   "last": "Ferreira",
+   "title": "HR Administrator",
+   "type": "Internal",
+   "nationality": "PT",
+   "location": "Lisbon",
+   "team": "HR Operations",
+   "manager": "E10002",
+   "startDaysAgo": 1953,
+   "roles": [
+    "Employee",
+    "Hr"
+   ],
+   "email": "ines.ferreira@aegis.example"
+  },
+  {
+   "number": "E10019",
+   "first": "Csilla",
+   "last": "Lakatos",
+   "title": "Recruiter",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Talent Acquisition",
+   "manager": "E10008",
+   "startDaysAgo": 851,
+   "roles": [
+    "Employee"
+   ],
+   "email": "csilla.lakatos@aegis.example"
+  },
+  {
+   "number": "E10020",
+   "first": "Péter",
+   "last": "Varga",
+   "title": "Senior Recruiter",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Talent Acquisition",
+   "manager": "E10008",
+   "startDaysAgo": 645,
+   "roles": [
+    "Employee"
+   ],
+   "email": "peter.varga@aegis.example"
+  },
+  {
+   "number": "E10021",
+   "first": "Péter",
+   "last": "Horváth",
+   "title": "Senior Recruiter",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Talent Acquisition",
+   "manager": "E10008",
+   "startDaysAgo": 2219,
+   "roles": [
+    "Employee"
+   ],
+   "email": "peter.horvath@aegis.example"
+  },
+  {
+   "number": "E10022",
+   "first": "Gabriella",
+   "last": "Lakatos",
+   "title": "Senior Accountant",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Accounting",
+   "manager": "E10003",
+   "startDaysAgo": 2772,
+   "roles": [
+    "Employee"
+   ],
+   "status": "OnLeave",
+   "email": "gabriella.lakatos@aegis.example"
+  },
+  {
+   "number": "E10023",
+   "first": "Tiago",
+   "last": "Silva",
+   "title": "Senior Accountant",
+   "type": "Internal",
+   "nationality": "PT",
+   "location": "Lisbon",
+   "team": "Accounting",
+   "manager": "E10003",
+   "startDaysAgo": 1403,
+   "roles": [
+    "Employee"
+   ],
+   "email": "tiago.silva@aegis.example"
+  },
+  {
+   "number": "E10024",
+   "first": "Márton",
+   "last": "Juhász",
+   "title": "Senior Accountant",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Accounting",
+   "manager": "E10003",
+   "startDaysAgo": 2026,
+   "roles": [
+    "Employee"
+   ],
+   "email": "marton.juhasz@aegis.example"
+  },
+  {
+   "number": "E10025",
+   "first": "István",
+   "last": "Mészáros",
+   "title": "Business Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Controlling",
+   "manager": "E10009",
+   "startDaysAgo": 2925,
+   "roles": [
+    "Employee"
+   ],
+   "email": "istvan.meszaros@aegis.example"
+  },
+  {
+   "number": "E10026",
+   "first": "Lena",
+   "last": "Schmidt",
+   "title": "Financial Controller",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "Controlling",
+   "manager": "E10009",
+   "startDaysAgo": 1863,
+   "roles": [
+    "Employee"
+   ],
+   "email": "lena.schmidt@aegis.example"
+  },
+  {
+   "number": "E10027",
+   "first": "Lena",
+   "last": "Wagner",
+   "title": "Business Analyst",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "Controlling",
+   "manager": "E10009",
+   "startDaysAgo": 1631,
+   "roles": [
+    "Employee"
+   ],
+   "email": "lena.wagner@aegis.example"
+  },
+  {
+   "number": "E10028",
+   "first": "Eszter",
+   "last": "Kiss",
+   "title": "Account Manager",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Sales Central Europe",
+   "manager": "E10004",
+   "startDaysAgo": 568,
+   "roles": [
+    "Employee"
+   ],
+   "email": "eszter.kiss@aegis.example"
+  },
+  {
+   "number": "E10029",
+   "first": "Rafael",
+   "last": "Ferreira",
+   "title": "Account Manager",
+   "type": "Internal",
+   "nationality": "ES",
+   "location": "Lisbon",
+   "team": "Sales Central Europe",
+   "manager": "E10004",
+   "startDaysAgo": 1091,
+   "roles": [
+    "Employee"
+   ],
+   "email": "rafael.ferreira@aegis.example"
+  },
+  {
+   "number": "E10030",
+   "first": "Maximilian",
+   "last": "Becker",
+   "title": "Account Manager",
+   "type": "Internal",
+   "nationality": "DE",
+   "location": "Berlin",
+   "team": "Sales Central Europe",
+   "manager": "E10004",
+   "startDaysAgo": 3022,
+   "roles": [
+    "Employee"
+   ],
+   "email": "maximilian.becker@aegis.example"
+  },
+  {
+   "number": "E10031",
+   "first": "Mia",
+   "last": "Wagner",
+   "title": "Sales Representative",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "Sales Central Europe",
+   "manager": "E10004",
+   "startDaysAgo": 2790,
+   "roles": [
+    "Employee"
+   ],
+   "email": "mia.wagner@aegis.example"
+  },
+  {
+   "number": "E10032",
+   "first": "Beatriz",
+   "last": "Santos",
+   "title": "Account Manager",
+   "type": "Internal",
+   "nationality": "BR",
+   "location": "Lisbon",
+   "team": "Sales Central Europe",
+   "manager": "E10004",
+   "startDaysAgo": 1399,
+   "roles": [
+    "Employee"
+   ],
+   "email": "beatriz.santos@aegis.example"
+  },
+  {
+   "number": "E10033",
+   "first": "Ferenc",
+   "last": "Oláh",
+   "title": "Senior Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": 1130,
+   "roles": [
+    "Employee"
+   ],
+   "email": "ferenc.olah@aegis.example"
+  },
+  {
+   "number": "E10034",
+   "first": "Sophie",
+   "last": "Huber",
+   "title": "Senior Analyst",
+   "type": "Internal",
+   "nationality": "DE",
+   "location": "Berlin",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": 314,
+   "roles": [
+    "Employee"
+   ],
+   "email": "sophie.huber@aegis.example"
+  },
+  {
+   "number": "E10035",
+   "first": "Eszter",
+   "last": "Simon",
+   "title": "Sales Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": 2175,
+   "roles": [
+    "Employee"
+   ],
+   "email": "eszter.simon@aegis.example"
+  },
+  {
+   "number": "E10036",
+   "first": "Nóra",
+   "last": "Molnár",
+   "title": "Senior Analyst",
+   "type": "Internal",
+   "nationality": "SK",
+   "location": "Budapest",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": 1162,
+   "roles": [
+    "Employee"
+   ],
+   "email": "nora.molnar@aegis.example"
+  },
+  {
+   "number": "E10037",
+   "first": "Inês",
+   "last": "Silva",
+   "title": "Senior Analyst",
+   "type": "Internal",
+   "nationality": "PT",
+   "location": "Lisbon",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": 2963,
+   "roles": [
+    "Employee"
+   ],
+   "email": "ines.silva@aegis.example"
+  },
+  {
+   "number": "E10038",
+   "first": "Zsófia",
+   "last": "Szabó",
+   "title": "Customer Success Specialist",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Customer Success",
+   "manager": "E10011",
+   "startDaysAgo": 2257,
+   "roles": [
+    "Employee"
+   ],
+   "status": "Offboarding",
+   "endInDays": 12,
+   "email": "zsofia.szabo@aegis.example"
+  },
+  {
+   "number": "E10039",
+   "first": "Márton",
+   "last": "Németh",
+   "title": "Customer Success Specialist",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Customer Success",
+   "manager": "E10011",
+   "startDaysAgo": 1298,
+   "roles": [
+    "Employee"
+   ],
+   "email": "marton.nemeth@aegis.example"
+  },
+  {
+   "number": "E10040",
+   "first": "Gergő",
+   "last": "Takács",
+   "title": "Customer Success Specialist",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Customer Success",
+   "manager": "E10011",
+   "startDaysAgo": 3165,
+   "roles": [
+    "Employee"
+   ],
+   "email": "gergo.takacs@aegis.example"
+  },
+  {
+   "number": "E10041",
+   "first": "Anna",
+   "last": "Fekete",
+   "title": "Site Reliability Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 1943,
+   "roles": [
+    "Employee"
+   ],
+   "email": "anna.fekete@aegis.example"
+  },
+  {
+   "number": "E10042",
+   "first": "Marek",
+   "last": "Novák",
+   "title": "DevOps Engineer",
+   "type": "Internal",
+   "nationality": "PL",
+   "location": "Remote",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 292,
+   "roles": [
+    "Employee"
+   ],
+   "email": "marek.novak@aegis.example"
+  },
+  {
+   "number": "E10043",
+   "first": "Eszter",
+   "last": "Farkas",
+   "title": "Site Reliability Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 597,
+   "roles": [
+    "Employee"
+   ],
+   "email": "eszter.farkas@aegis.example"
+  },
+  {
+   "number": "E10044",
+   "first": "Zsófia",
+   "last": "Oláh",
+   "title": "Senior .NET Developer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 1094,
+   "roles": [
+    "Employee"
+   ],
+   "email": "zsofia.olah@aegis.example"
+  },
+  {
+   "number": "E10045",
+   "first": "Rafael",
+   "last": "Silva",
+   "title": "DevOps Engineer",
+   "type": "Internal",
+   "nationality": "PT",
+   "location": "Lisbon",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 1266,
+   "roles": [
+    "Employee"
+   ],
+   "email": "rafael.silva@aegis.example"
+  },
+  {
+   "number": "E10046",
+   "first": "Péter",
+   "last": "Takács",
+   "title": "Senior .NET Developer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": 2183,
+   "roles": [
+    "Employee"
+   ],
+   "email": "peter.takacs@aegis.example"
+  },
+  {
+   "number": "E10047",
+   "first": "Gabriella",
+   "last": "Horváth",
+   "title": "QA Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": 1246,
+   "roles": [
+    "Employee"
+   ],
+   "email": "gabriella.horvath@aegis.example"
+  },
+  {
+   "number": "E10048",
+   "first": "Réka",
+   "last": "Horváth",
+   "title": "Senior .NET Developer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": 2477,
+   "roles": [
+    "Employee"
+   ],
+   "email": "reka.horvath@aegis.example"
+  },
+  {
+   "number": "E10049",
+   "first": "István",
+   "last": "Oláh",
+   "title": "QA Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": 2673,
+   "roles": [
+    "Employee"
+   ],
+   "email": "istvan.olah@aegis.example"
+  },
+  {
+   "number": "E10050",
+   "first": "Sándor",
+   "last": "Simon",
+   "title": "IAM Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": 1840,
+   "roles": [
+    "Employee"
+   ],
+   "email": "sandor.simon@aegis.example"
+  },
+  {
+   "number": "E10051",
+   "first": "Tiago",
+   "last": "Santos",
+   "title": "Test Automation Engineer",
+   "type": "Internal",
+   "nationality": "PT",
+   "location": "Lisbon",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 458,
+   "roles": [
+    "Employee"
+   ],
+   "email": "tiago.santos@aegis.example"
+  },
+  {
+   "number": "E10052",
+   "first": "Andrei",
+   "last": "Ionescu",
+   "title": "Frontend Developer",
+   "type": "Internal",
+   "nationality": "RO",
+   "location": "Budapest",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 670,
+   "roles": [
+    "Employee"
+   ],
+   "email": "andrei.ionescu@aegis.example"
+  },
+  {
+   "number": "E10053",
+   "first": "Réka",
+   "last": "Rácz",
+   "title": "Test Automation Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 1803,
+   "roles": [
+    "Employee"
+   ],
+   "email": "reka.racz@aegis.example"
+  },
+  {
+   "number": "E10054",
+   "first": "Katalin",
+   "last": "Horváth",
+   "title": "UX Designer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 1191,
+   "roles": [
+    "Employee"
+   ],
+   "email": "katalin.horvath@aegis.example"
+  },
+  {
+   "number": "E10055",
+   "first": "Lukas",
+   "last": "Gruber",
+   "title": "Full-stack Developer",
+   "type": "Internal",
+   "nationality": "DE",
+   "location": "Berlin",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 1634,
+   "roles": [
+    "Employee"
+   ],
+   "email": "lukas.gruber@aegis.example"
+  },
+  {
+   "number": "E10056",
+   "first": "Nóra",
+   "last": "Rácz",
+   "title": "Data Engineer",
+   "type": "Internal",
+   "nationality": "UA",
+   "location": "Budapest",
+   "team": "Data Engineering",
+   "manager": "E10014",
+   "startDaysAgo": 2029,
+   "roles": [
+    "Employee"
+   ],
+   "email": "nora.racz@aegis.example"
+  },
+  {
+   "number": "E10057",
+   "first": "Sándor",
+   "last": "Juhász",
+   "title": "BI Developer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Data Engineering",
+   "manager": "E10014",
+   "startDaysAgo": 649,
+   "roles": [
+    "Employee"
+   ],
+   "email": "sandor.juhasz@aegis.example"
+  },
+  {
+   "number": "E10058",
+   "first": "Tímea",
+   "last": "Tóth",
+   "title": "BI Developer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Data Engineering",
+   "manager": "E10014",
+   "startDaysAgo": 1221,
+   "roles": [
+    "Employee"
+   ],
+   "email": "timea.toth@aegis.example"
+  },
+  {
+   "number": "E10059",
+   "first": "Gabriella",
+   "last": "Tóth",
+   "title": "Security Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Security Operations",
+   "manager": "E10006",
+   "startDaysAgo": 818,
+   "roles": [
+    "Employee",
+    "SecurityOfficer"
+   ],
+   "email": "gabriella.toth@aegis.example"
+  },
+  {
+   "number": "E10060",
+   "first": "Tímea",
+   "last": "Rácz",
+   "title": "Security Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Security Operations",
+   "manager": "E10006",
+   "startDaysAgo": 2644,
+   "roles": [
+    "Employee",
+    "SecurityOfficer"
+   ],
+   "email": "timea.racz@aegis.example"
+  },
+  {
+   "number": "E10061",
+   "first": "Lena",
+   "last": "Müller",
+   "title": "Security Engineer",
+   "type": "Internal",
+   "nationality": "DE",
+   "location": "Berlin",
+   "team": "Security Operations",
+   "manager": "E10006",
+   "startDaysAgo": 1916,
+   "roles": [
+    "Employee",
+    "SecurityOfficer"
+   ],
+   "email": "lena.muller@aegis.example"
+  },
+  {
+   "number": "E10062",
+   "first": "Arjun",
+   "last": "Sharma",
+   "title": "IT Support Specialist",
+   "type": "Internal",
+   "nationality": "IN",
+   "location": "Remote",
+   "team": "Service Desk",
+   "manager": "E10007",
+   "startDaysAgo": 277,
+   "roles": [
+    "Employee",
+    "Admin"
+   ],
+   "email": "arjun.sharma@aegis.example"
+  },
+  {
+   "number": "E10063",
+   "first": "Ferenc",
+   "last": "Molnár",
+   "title": "Service Desk Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Service Desk",
+   "manager": "E10007",
+   "startDaysAgo": 2523,
+   "roles": [
+    "Employee"
+   ],
+   "email": "ferenc.molnar@aegis.example"
+  },
+  {
+   "number": "E10064",
+   "first": "Tímea",
+   "last": "Simon",
+   "title": "Service Desk Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Service Desk",
+   "manager": "E10007",
+   "startDaysAgo": 1089,
+   "roles": [
+    "Employee"
+   ],
+   "email": "timea.simon@aegis.example"
+  },
+  {
+   "number": "E10065",
+   "first": "Zsófia",
+   "last": "Papp",
+   "title": "Endpoint Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Workplace IT",
+   "manager": "E10015",
+   "startDaysAgo": 726,
+   "roles": [
+    "Employee"
+   ],
+   "email": "zsofia.papp@aegis.example"
+  },
+  {
+   "number": "E10066",
+   "first": "Viktor",
+   "last": "Kiss",
+   "title": "Endpoint Engineer",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Workplace IT",
+   "manager": "E10015",
+   "startDaysAgo": 1203,
+   "roles": [
+    "Employee"
+   ],
+   "email": "viktor.kiss@aegis.example"
+  },
+  {
+   "number": "E10067",
+   "first": "Rafael",
+   "last": "Santos",
+   "title": "Endpoint Engineer",
+   "type": "Internal",
+   "nationality": "ES",
+   "location": "Lisbon",
+   "team": "Workplace IT",
+   "manager": "E10015",
+   "startDaysAgo": 816,
+   "roles": [
+    "Employee"
+   ],
+   "email": "rafael.santos@aegis.example"
+  },
+  {
+   "number": "X10068",
+   "first": "Márton",
+   "last": "Kovács",
+   "title": "Contract Frontend Developer",
+   "type": "External",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Web Applications",
+   "manager": "E10013",
+   "startDaysAgo": 128,
+   "roles": [
+    "Employee"
+   ],
+   "company": "Pixelforge Kft.",
+   "endInDays": 69,
+   "email": "marton.kovacs@partner.aegis.example"
+  },
+  {
+   "number": "X10069",
+   "first": "Hanna",
+   "last": "Horváth",
+   "title": "Cloud Consultant",
+   "type": "External",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Platform",
+   "manager": "E10005",
+   "startDaysAgo": 114,
+   "roles": [
+    "Employee"
+   ],
+   "company": "Nimbus Partners GmbH",
+   "endInDays": 66,
+   "email": "hanna.horvath@partner.aegis.example"
+  },
+  {
+   "number": "X10070",
+   "first": "Péter",
+   "last": "Fekete",
+   "title": "Data Consultant",
+   "type": "External",
+   "nationality": "HU",
+   "location": "Debrecen",
+   "team": "Data Engineering",
+   "manager": "E10014",
+   "startDaysAgo": 236,
+   "roles": [
+    "Employee"
+   ],
+   "company": "Quantia Lda.",
+   "endInDays": 109,
+   "email": "peter.fekete@partner.aegis.example"
+  },
+  {
+   "number": "X10071",
+   "first": "Jonas",
+   "last": "Wagner",
+   "title": "Service Desk Agent",
+   "type": "External",
+   "nationality": "DE",
+   "location": "Berlin",
+   "team": "Service Desk",
+   "manager": "E10007",
+   "startDaysAgo": 171,
+   "roles": [
+    "Employee"
+   ],
+   "company": "HelpFirst Kft.",
+   "endInDays": 21,
+   "email": "jonas.wagner@partner.aegis.example"
+  },
+  {
+   "number": "E10072",
+   "first": "Lukas",
+   "last": "Huber",
+   "title": "Junior .NET Developer",
+   "type": "Internal",
+   "nationality": "AT",
+   "location": "Vienna",
+   "team": "Identity & Access",
+   "manager": "E10012",
+   "startDaysAgo": -10,
+   "roles": [
+    "Employee"
+   ],
+   "status": "Preboarding",
+   "email": "lukas.huber@aegis.example"
+  },
+  {
+   "number": "E10073",
+   "first": "Orsolya",
+   "last": "Simon",
+   "title": "Sales Analyst",
+   "type": "Internal",
+   "nationality": "HU",
+   "location": "Budapest",
+   "team": "Sales Analytics",
+   "manager": "E10010",
+   "startDaysAgo": -21,
+   "roles": [
+    "Employee"
+   ],
+   "status": "Preboarding",
+   "email": "orsolya.simon@aegis.example"
+  }
+ ],
+ "courses": [
+  {
+   "code": "DP-101",
+   "title": "Data protection essentials (GDPR)",
+   "description": "Personal data, lawful processing, data subject rights, incidents.",
+   "mandatory": true,
+   "dueDays": 30,
+   "validityMonths": 12,
+   "passScore": 80
+  },
+  {
+   "code": "IS-101",
+   "title": "Information security awareness",
+   "description": "Phishing, passwords and MFA, classification, clean desk.",
+   "mandatory": true,
+   "dueDays": 30,
+   "validityMonths": 12,
+   "passScore": 80
+  },
+  {
+   "code": "COC-100",
+   "title": "Code of conduct",
+   "description": "How we work together, conflicts of interest, speaking up.",
+   "mandatory": true,
+   "dueDays": 45,
+   "validityMonths": 24,
+   "passScore": 0
+  },
+  {
+   "code": "FIN-210",
+   "title": "Financial controls for ERP users",
+   "description": "Segregation of duties, approvals, audit trail in the ERP.",
+   "mandatory": false,
+   "dueDays": 30,
+   "validityMonths": 12,
+   "passScore": 85
+  },
+  {
+   "code": "PRIV-300",
+   "title": "Privileged access handling",
+   "description": "Rules for administrator accounts: break-glass, logging, four eyes.",
+   "mandatory": false,
+   "dueDays": 14,
+   "validityMonths": 6,
+   "passScore": 90
+  },
+  {
+   "code": "ONB-001",
+   "title": "Welcome to the company",
+   "description": "Organisation, tools, where to find help.",
+   "mandatory": false,
+   "dueDays": 14,
+   "validityMonths": null,
+   "passScore": 0
+  }
+ ],
+ "systems": [
+  {
+   "code": "CRM",
+   "name": "Customer CRM",
+   "description": "Accounts, opportunities and customer contacts.",
+   "owner": "E10004",
+   "provisioning": "ldap-group",
+   "requiredCourse": "DP-101",
+   "roles": [
+    {
+     "name": "Reader",
+     "description": "Read accounts and contacts",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "crm-readers"
+    },
+    {
+     "name": "Sales user",
+     "description": "Manage own accounts and opportunities",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "crm-sales"
+    },
+    {
+     "name": "Administrator",
+     "description": "Configuration, users, data import",
+     "privileged": true,
+     "validityDays": 90,
+     "group": "crm-admins"
+    }
+   ]
+  },
+  {
+   "code": "ERP",
+   "name": "Finance ERP",
+   "description": "General ledger, invoices, payments.",
+   "owner": "E10003",
+   "provisioning": "manual",
+   "requiredCourse": "FIN-210",
+   "roles": [
+    {
+     "name": "Invoice clerk",
+     "description": "Record incoming invoices",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    },
+    {
+     "name": "Payment approver",
+     "description": "Release payments (four eyes)",
+     "privileged": true,
+     "validityDays": 90,
+     "group": null
+    },
+    {
+     "name": "Reporting",
+     "description": "Financial reports, read only",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    }
+   ]
+  },
+  {
+   "code": "HRP",
+   "name": "HR Portal",
+   "description": "Personnel files, contracts, payroll data.",
+   "owner": "E10002",
+   "provisioning": "api",
+   "requiredCourse": "DP-101",
+   "roles": [
+    {
+     "name": "HR specialist",
+     "description": "Personnel records of assigned units",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    },
+    {
+     "name": "Payroll",
+     "description": "Salary data",
+     "privileged": true,
+     "validityDays": 180,
+     "group": null
+    }
+   ]
+  },
+  {
+   "code": "GIT",
+   "name": "Source code hosting",
+   "description": "Repositories, pull requests, CI pipelines.",
+   "owner": "E10005",
+   "provisioning": "ldap-group",
+   "requiredCourse": null,
+   "roles": [
+    {
+     "name": "Developer",
+     "description": "Push to team repositories",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "git-developers"
+    },
+    {
+     "name": "Maintainer",
+     "description": "Merge to protected branches, manage pipelines",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "git-maintainers"
+    },
+    {
+     "name": "Organisation owner",
+     "description": "Full administrative rights",
+     "privileged": true,
+     "validityDays": 30,
+     "group": "git-owners"
+    }
+   ]
+  },
+  {
+   "code": "CLD",
+   "name": "Cloud subscription",
+   "description": "Production and test cloud resources.",
+   "owner": "E10005",
+   "provisioning": "api",
+   "requiredCourse": "PRIV-300",
+   "roles": [
+    {
+     "name": "Reader",
+     "description": "View resources and logs",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    },
+    {
+     "name": "Contributor (test)",
+     "description": "Change test resources",
+     "privileged": false,
+     "validityDays": 180,
+     "group": null
+    },
+    {
+     "name": "Owner (production)",
+     "description": "Change production, assign roles",
+     "privileged": true,
+     "validityDays": 30,
+     "group": null
+    }
+   ]
+  },
+  {
+   "code": "DWH",
+   "name": "Data warehouse",
+   "description": "Company reporting and analytics.",
+   "owner": "E10014",
+   "provisioning": "ldap-group",
+   "requiredCourse": "DP-101",
+   "roles": [
+    {
+     "name": "Analyst",
+     "description": "Query curated data marts",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "dwh-analysts"
+    },
+    {
+     "name": "Engineer",
+     "description": "Build pipelines, raw zone access",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "dwh-engineers"
+    }
+   ]
+  },
+  {
+   "code": "VPN",
+   "name": "Remote access VPN",
+   "description": "Access to the internal network from outside.",
+   "owner": "E10007",
+   "provisioning": "ldap-group",
+   "requiredCourse": "IS-101",
+   "roles": [
+    {
+     "name": "Standard",
+     "description": "Office network",
+     "privileged": false,
+     "validityDays": 365,
+     "group": "vpn-users"
+    },
+    {
+     "name": "Admin network",
+     "description": "Management network of servers",
+     "privileged": true,
+     "validityDays": 30,
+     "group": "vpn-admins"
+    }
+   ]
+  },
+  {
+   "code": "ITSM",
+   "name": "IT service management",
+   "description": "Tickets, changes and the asset register.",
+   "owner": "E10007",
+   "provisioning": "manual",
+   "requiredCourse": null,
+   "roles": [
+    {
+     "name": "Agent",
+     "description": "Work on tickets",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    },
+    {
+     "name": "Change manager",
+     "description": "Approve changes",
+     "privileged": false,
+     "validityDays": 365,
+     "group": null
+    }
+   ]
+  }
+ ],
+ "assignments": [
+  {
+   "employee": "E10001",
+   "course": "DP-101",
+   "assignedDaysAgo": 93,
+   "actions": []
+  },
+  {
+   "employee": "E10001",
+   "course": "IS-101",
+   "assignedDaysAgo": 228,
+   "actions": [
+    [
+     "complete",
+     "E10001",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10001",
+   "course": "COC-100",
+   "assignedDaysAgo": 316,
+   "actions": [
+    [
+     "complete",
+     "E10001",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10002",
+   "course": "DP-101",
+   "assignedDaysAgo": 39,
+   "actions": [
+    [
+     "complete",
+     "E10002",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10002",
+   "course": "IS-101",
+   "assignedDaysAgo": 98,
+   "actions": [
+    [
+     "complete",
+     "E10002",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10002",
+   "course": "COC-100",
+   "assignedDaysAgo": 86,
+   "actions": [
+    [
+     "complete",
+     "E10002",
+     85
+    ]
+   ]
+  },
+  {
+   "employee": "E10003",
+   "course": "DP-101",
+   "assignedDaysAgo": 248,
+   "actions": [
+    [
+     "complete",
+     "E10003",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10003",
+   "course": "IS-101",
+   "assignedDaysAgo": 254,
+   "actions": [
+    [
+     "complete",
+     "E10003",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10003",
+   "course": "COC-100",
+   "assignedDaysAgo": 184,
+   "actions": [
+    [
+     "complete",
+     "E10003",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10004",
+   "course": "DP-101",
+   "assignedDaysAgo": 153,
+   "actions": [
+    [
+     "complete",
+     "E10004",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10004",
+   "course": "IS-101",
+   "assignedDaysAgo": 164,
+   "actions": []
+  },
+  {
+   "employee": "E10004",
+   "course": "COC-100",
+   "assignedDaysAgo": 143,
+   "actions": [
+    [
+     "complete",
+     "E10004",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "E10005",
+   "course": "DP-101",
+   "assignedDaysAgo": 78,
+   "actions": [
+    [
+     "complete",
+     "E10005",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10005",
+   "course": "IS-101",
+   "assignedDaysAgo": 254,
+   "actions": [
+    [
+     "start",
+     "E10005"
+    ],
+    [
+     "complete",
+     "E10005",
+     63
+    ]
+   ]
+  },
+  {
+   "employee": "E10005",
+   "course": "COC-100",
+   "assignedDaysAgo": 310,
+   "actions": [
+    [
+     "complete",
+     "E10005",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10006",
+   "course": "DP-101",
+   "assignedDaysAgo": 209,
+   "actions": [
+    [
+     "start",
+     "E10006"
+    ]
+   ]
+  },
+  {
+   "employee": "E10006",
+   "course": "IS-101",
+   "assignedDaysAgo": 287,
+   "actions": [
+    [
+     "start",
+     "E10006"
+    ]
+   ]
+  },
+  {
+   "employee": "E10006",
+   "course": "COC-100",
+   "assignedDaysAgo": 44,
+   "actions": [
+    [
+     "complete",
+     "E10006",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10007",
+   "course": "DP-101",
+   "assignedDaysAgo": 149,
+   "actions": []
+  },
+  {
+   "employee": "E10007",
+   "course": "IS-101",
+   "assignedDaysAgo": 179,
+   "actions": [
+    [
+     "start",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "employee": "E10007",
+   "course": "COC-100",
+   "assignedDaysAgo": 138,
+   "actions": [
+    [
+     "start",
+     "E10007"
+    ],
+    [
+     "complete",
+     "E10007",
+     0
+    ]
+   ]
+  },
+  {
+   "employee": "E10008",
+   "course": "DP-101",
+   "assignedDaysAgo": 215,
+   "actions": []
+  },
+  {
+   "employee": "E10008",
+   "course": "IS-101",
+   "assignedDaysAgo": 255,
+   "actions": [
+    [
+     "complete",
+     "E10008",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10008",
+   "course": "COC-100",
+   "assignedDaysAgo": 319,
+   "actions": [
+    [
+     "complete",
+     "E10008",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "E10009",
+   "course": "DP-101",
+   "assignedDaysAgo": 225,
+   "actions": [
+    [
+     "complete",
+     "E10009",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10009",
+   "course": "IS-101",
+   "assignedDaysAgo": 62,
+   "actions": [
+    [
+     "complete",
+     "E10009",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10009",
+   "course": "COC-100",
+   "assignedDaysAgo": 46,
+   "actions": [
+    [
+     "complete",
+     "E10009",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10010",
+   "course": "DP-101",
+   "assignedDaysAgo": 110,
+   "actions": [
+    [
+     "start",
+     "E10010"
+    ]
+   ]
+  },
+  {
+   "employee": "E10010",
+   "course": "IS-101",
+   "assignedDaysAgo": 185,
+   "actions": [
+    [
+     "complete",
+     "E10010",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10010",
+   "course": "COC-100",
+   "assignedDaysAgo": 193,
+   "actions": [
+    [
+     "start",
+     "E10010"
+    ]
+   ]
+  },
+  {
+   "employee": "E10011",
+   "course": "DP-101",
+   "assignedDaysAgo": 135,
+   "actions": []
+  },
+  {
+   "employee": "E10011",
+   "course": "IS-101",
+   "assignedDaysAgo": 261,
+   "actions": [
+    [
+     "start",
+     "E10011"
+    ]
+   ]
+  },
+  {
+   "employee": "E10011",
+   "course": "COC-100",
+   "assignedDaysAgo": 134,
+   "actions": [
+    [
+     "start",
+     "E10011"
+    ]
+   ]
+  },
+  {
+   "employee": "E10012",
+   "course": "DP-101",
+   "assignedDaysAgo": 134,
+   "actions": [
+    [
+     "start",
+     "E10012"
+    ]
+   ]
+  },
+  {
+   "employee": "E10012",
+   "course": "IS-101",
+   "assignedDaysAgo": 66,
+   "actions": [
+    [
+     "start",
+     "E10012"
+    ]
+   ]
+  },
+  {
+   "employee": "E10012",
+   "course": "COC-100",
+   "assignedDaysAgo": 308,
+   "actions": [
+    [
+     "complete",
+     "E10012",
+     81
+    ]
+   ]
+  },
+  {
+   "employee": "E10013",
+   "course": "DP-101",
+   "assignedDaysAgo": 234,
+   "actions": [
+    [
+     "complete",
+     "E10013",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10013",
+   "course": "IS-101",
+   "assignedDaysAgo": 278,
+   "actions": [
+    [
+     "complete",
+     "E10013",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10013",
+   "course": "COC-100",
+   "assignedDaysAgo": 313,
+   "actions": [
+    [
+     "complete",
+     "E10013",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10014",
+   "course": "DP-101",
+   "assignedDaysAgo": 296,
+   "actions": [
+    [
+     "complete",
+     "E10014",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10014",
+   "course": "IS-101",
+   "assignedDaysAgo": 293,
+   "actions": [
+    [
+     "start",
+     "E10014"
+    ]
+   ]
+  },
+  {
+   "employee": "E10014",
+   "course": "COC-100",
+   "assignedDaysAgo": 182,
+   "actions": [
+    [
+     "start",
+     "E10014"
+    ]
+   ]
+  },
+  {
+   "employee": "E10015",
+   "course": "DP-101",
+   "assignedDaysAgo": 238,
+   "actions": [
+    [
+     "complete",
+     "E10015",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10015",
+   "course": "IS-101",
+   "assignedDaysAgo": 278,
+   "actions": [
+    [
+     "start",
+     "E10015"
+    ],
+    [
+     "complete",
+     "E10015",
+     68
+    ]
+   ]
+  },
+  {
+   "employee": "E10015",
+   "course": "COC-100",
+   "assignedDaysAgo": 90,
+   "actions": [
+    [
+     "complete",
+     "E10015",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10016",
+   "course": "DP-101",
+   "assignedDaysAgo": 31,
+   "actions": [
+    [
+     "complete",
+     "E10016",
+     97
+    ]
+   ]
+  },
+  {
+   "employee": "E10016",
+   "course": "IS-101",
+   "assignedDaysAgo": 165,
+   "actions": [
+    [
+     "start",
+     "E10016"
+    ]
+   ]
+  },
+  {
+   "employee": "E10016",
+   "course": "COC-100",
+   "assignedDaysAgo": 242,
+   "actions": [
+    [
+     "complete",
+     "E10016",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10017",
+   "course": "DP-101",
+   "assignedDaysAgo": 122,
+   "actions": [
+    [
+     "start",
+     "E10017"
+    ],
+    [
+     "complete",
+     "E10017",
+     72
+    ]
+   ]
+  },
+  {
+   "employee": "E10017",
+   "course": "IS-101",
+   "assignedDaysAgo": 248,
+   "actions": [
+    [
+     "start",
+     "E10017"
+    ],
+    [
+     "complete",
+     "E10017",
+     54
+    ]
+   ]
+  },
+  {
+   "employee": "E10017",
+   "course": "COC-100",
+   "assignedDaysAgo": 320,
+   "actions": []
+  },
+  {
+   "employee": "E10018",
+   "course": "DP-101",
+   "assignedDaysAgo": 233,
+   "actions": []
+  },
+  {
+   "employee": "E10018",
+   "course": "IS-101",
+   "assignedDaysAgo": 330,
+   "actions": [
+    [
+     "complete",
+     "E10018",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10018",
+   "course": "COC-100",
+   "assignedDaysAgo": 24,
+   "actions": [
+    [
+     "start",
+     "E10018"
+    ],
+    [
+     "complete",
+     "E10018",
+     0
+    ]
+   ]
+  },
+  {
+   "employee": "E10019",
+   "course": "DP-101",
+   "assignedDaysAgo": 263,
+   "actions": [
+    [
+     "complete",
+     "E10019",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10019",
+   "course": "IS-101",
+   "assignedDaysAgo": 99,
+   "actions": [
+    [
+     "complete",
+     "E10019",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10019",
+   "course": "COC-100",
+   "assignedDaysAgo": 261,
+   "actions": [
+    [
+     "start",
+     "E10019"
+    ]
+   ]
+  },
+  {
+   "employee": "E10020",
+   "course": "DP-101",
+   "assignedDaysAgo": 181,
+   "actions": [
+    [
+     "complete",
+     "E10020",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10020",
+   "course": "IS-101",
+   "assignedDaysAgo": 329,
+   "actions": [
+    [
+     "complete",
+     "E10020",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10020",
+   "course": "COC-100",
+   "assignedDaysAgo": 119,
+   "actions": [
+    [
+     "complete",
+     "E10020",
+     96
+    ]
+   ]
+  },
+  {
+   "employee": "E10021",
+   "course": "DP-101",
+   "assignedDaysAgo": 27,
+   "actions": [
+    [
+     "complete",
+     "E10021",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10021",
+   "course": "IS-101",
+   "assignedDaysAgo": 85,
+   "actions": [
+    [
+     "complete",
+     "E10021",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10021",
+   "course": "COC-100",
+   "assignedDaysAgo": 113,
+   "actions": []
+  },
+  {
+   "employee": "E10022",
+   "course": "DP-101",
+   "assignedDaysAgo": 266,
+   "actions": [
+    [
+     "complete",
+     "E10022",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10022",
+   "course": "IS-101",
+   "assignedDaysAgo": 281,
+   "actions": [
+    [
+     "complete",
+     "E10022",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10022",
+   "course": "COC-100",
+   "assignedDaysAgo": 67,
+   "actions": [
+    [
+     "start",
+     "E10022"
+    ]
+   ]
+  },
+  {
+   "employee": "E10023",
+   "course": "DP-101",
+   "assignedDaysAgo": 306,
+   "actions": [
+    [
+     "start",
+     "E10023"
+    ],
+    [
+     "complete",
+     "E10023",
+     67
+    ]
+   ]
+  },
+  {
+   "employee": "E10023",
+   "course": "IS-101",
+   "assignedDaysAgo": 144,
+   "actions": [
+    [
+     "start",
+     "E10023"
+    ]
+   ]
+  },
+  {
+   "employee": "E10023",
+   "course": "COC-100",
+   "assignedDaysAgo": 210,
+   "actions": []
+  },
+  {
+   "employee": "E10024",
+   "course": "DP-101",
+   "assignedDaysAgo": 125,
+   "actions": [
+    [
+     "complete",
+     "E10024",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10024",
+   "course": "IS-101",
+   "assignedDaysAgo": 184,
+   "actions": [
+    [
+     "complete",
+     "E10024",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10024",
+   "course": "COC-100",
+   "assignedDaysAgo": 191,
+   "actions": [
+    [
+     "start",
+     "E10024"
+    ],
+    [
+     "complete",
+     "E10024",
+     0
+    ]
+   ]
+  },
+  {
+   "employee": "E10025",
+   "course": "DP-101",
+   "assignedDaysAgo": 170,
+   "actions": [
+    [
+     "complete",
+     "E10025",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10025",
+   "course": "IS-101",
+   "assignedDaysAgo": 132,
+   "actions": [
+    [
+     "complete",
+     "E10025",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10025",
+   "course": "COC-100",
+   "assignedDaysAgo": 258,
+   "actions": [
+    [
+     "complete",
+     "E10025",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10026",
+   "course": "DP-101",
+   "assignedDaysAgo": 26,
+   "actions": [
+    [
+     "complete",
+     "E10026",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10026",
+   "course": "IS-101",
+   "assignedDaysAgo": 153,
+   "actions": [
+    [
+     "complete",
+     "E10026",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10026",
+   "course": "COC-100",
+   "assignedDaysAgo": 228,
+   "actions": [
+    [
+     "complete",
+     "E10026",
+     96
+    ]
+   ]
+  },
+  {
+   "employee": "E10027",
+   "course": "DP-101",
+   "assignedDaysAgo": 278,
+   "actions": []
+  },
+  {
+   "employee": "E10027",
+   "course": "IS-101",
+   "assignedDaysAgo": 246,
+   "actions": [
+    [
+     "complete",
+     "E10027",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10027",
+   "course": "COC-100",
+   "assignedDaysAgo": 285,
+   "actions": [
+    [
+     "complete",
+     "E10027",
+     85
+    ]
+   ]
+  },
+  {
+   "employee": "E10028",
+   "course": "DP-101",
+   "assignedDaysAgo": 53,
+   "actions": [
+    [
+     "complete",
+     "E10028",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10028",
+   "course": "IS-101",
+   "assignedDaysAgo": 86,
+   "actions": [
+    [
+     "complete",
+     "E10028",
+     97
+    ]
+   ]
+  },
+  {
+   "employee": "E10028",
+   "course": "COC-100",
+   "assignedDaysAgo": 187,
+   "actions": [
+    [
+     "start",
+     "E10028"
+    ]
+   ]
+  },
+  {
+   "employee": "E10029",
+   "course": "DP-101",
+   "assignedDaysAgo": 221,
+   "actions": [
+    [
+     "complete",
+     "E10029",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10029",
+   "course": "IS-101",
+   "assignedDaysAgo": 55,
+   "actions": [
+    [
+     "complete",
+     "E10029",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10029",
+   "course": "COC-100",
+   "assignedDaysAgo": 148,
+   "actions": [
+    [
+     "start",
+     "E10029"
+    ]
+   ]
+  },
+  {
+   "employee": "E10030",
+   "course": "DP-101",
+   "assignedDaysAgo": 190,
+   "actions": [
+    [
+     "complete",
+     "E10030",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10030",
+   "course": "IS-101",
+   "assignedDaysAgo": 277,
+   "actions": []
+  },
+  {
+   "employee": "E10030",
+   "course": "COC-100",
+   "assignedDaysAgo": 319,
+   "actions": [
+    [
+     "start",
+     "E10030"
+    ]
+   ]
+  },
+  {
+   "employee": "E10031",
+   "course": "DP-101",
+   "assignedDaysAgo": 120,
+   "actions": [
+    [
+     "complete",
+     "E10031",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10031",
+   "course": "IS-101",
+   "assignedDaysAgo": 290,
+   "actions": [
+    [
+     "complete",
+     "E10031",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10031",
+   "course": "COC-100",
+   "assignedDaysAgo": 94,
+   "actions": [
+    [
+     "complete",
+     "E10031",
+     97
+    ]
+   ]
+  },
+  {
+   "employee": "E10032",
+   "course": "DP-101",
+   "assignedDaysAgo": 69,
+   "actions": []
+  },
+  {
+   "employee": "E10032",
+   "course": "IS-101",
+   "assignedDaysAgo": 45,
+   "actions": [
+    [
+     "complete",
+     "E10032",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10032",
+   "course": "COC-100",
+   "assignedDaysAgo": 319,
+   "actions": [
+    [
+     "complete",
+     "E10032",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10033",
+   "course": "DP-101",
+   "assignedDaysAgo": 221,
+   "actions": [
+    [
+     "complete",
+     "E10033",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10033",
+   "course": "IS-101",
+   "assignedDaysAgo": 117,
+   "actions": [
+    [
+     "complete",
+     "E10033",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10033",
+   "course": "COC-100",
+   "assignedDaysAgo": 135,
+   "actions": [
+    [
+     "complete",
+     "E10033",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10034",
+   "course": "DP-101",
+   "assignedDaysAgo": 62,
+   "actions": [
+    [
+     "complete",
+     "E10034",
+     96
+    ]
+   ]
+  },
+  {
+   "employee": "E10034",
+   "course": "IS-101",
+   "assignedDaysAgo": 243,
+   "actions": [
+    [
+     "complete",
+     "E10034",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10034",
+   "course": "COC-100",
+   "assignedDaysAgo": 197,
+   "actions": [
+    [
+     "complete",
+     "E10034",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10035",
+   "course": "DP-101",
+   "assignedDaysAgo": 140,
+   "actions": [
+    [
+     "complete",
+     "E10035",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10035",
+   "course": "IS-101",
+   "assignedDaysAgo": 177,
+   "actions": [
+    [
+     "complete",
+     "E10035",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10035",
+   "course": "COC-100",
+   "assignedDaysAgo": 173,
+   "actions": [
+    [
+     "complete",
+     "E10035",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10036",
+   "course": "DP-101",
+   "assignedDaysAgo": 238,
+   "actions": [
+    [
+     "complete",
+     "E10036",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10036",
+   "course": "IS-101",
+   "assignedDaysAgo": 279,
+   "actions": [
+    [
+     "complete",
+     "E10036",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10036",
+   "course": "COC-100",
+   "assignedDaysAgo": 212,
+   "actions": [
+    [
+     "complete",
+     "E10036",
+     85
+    ]
+   ]
+  },
+  {
+   "employee": "E10037",
+   "course": "DP-101",
+   "assignedDaysAgo": 203,
+   "actions": [
+    [
+     "complete",
+     "E10037",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10037",
+   "course": "IS-101",
+   "assignedDaysAgo": 121,
+   "actions": [
+    [
+     "complete",
+     "E10037",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10037",
+   "course": "COC-100",
+   "assignedDaysAgo": 186,
+   "actions": [
+    [
+     "complete",
+     "E10037",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10038",
+   "course": "DP-101",
+   "assignedDaysAgo": 39,
+   "actions": [
+    [
+     "complete",
+     "E10038",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10038",
+   "course": "IS-101",
+   "assignedDaysAgo": 223,
+   "actions": [
+    [
+     "start",
+     "E10038"
+    ],
+    [
+     "complete",
+     "E10038",
+     65
+    ]
+   ]
+  },
+  {
+   "employee": "E10038",
+   "course": "COC-100",
+   "assignedDaysAgo": 272,
+   "actions": []
+  },
+  {
+   "employee": "E10039",
+   "course": "DP-101",
+   "assignedDaysAgo": 172,
+   "actions": [
+    [
+     "complete",
+     "E10039",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10039",
+   "course": "IS-101",
+   "assignedDaysAgo": 122,
+   "actions": [
+    [
+     "complete",
+     "E10039",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10039",
+   "course": "COC-100",
+   "assignedDaysAgo": 323,
+   "actions": [
+    [
+     "complete",
+     "E10039",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10040",
+   "course": "DP-101",
+   "assignedDaysAgo": 157,
+   "actions": [
+    [
+     "complete",
+     "E10040",
+     81
+    ]
+   ]
+  },
+  {
+   "employee": "E10040",
+   "course": "IS-101",
+   "assignedDaysAgo": 320,
+   "actions": [
+    [
+     "complete",
+     "E10040",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10040",
+   "course": "COC-100",
+   "assignedDaysAgo": 52,
+   "actions": [
+    [
+     "complete",
+     "E10040",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10041",
+   "course": "DP-101",
+   "assignedDaysAgo": 159,
+   "actions": [
+    [
+     "complete",
+     "E10041",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10041",
+   "course": "IS-101",
+   "assignedDaysAgo": 138,
+   "actions": [
+    [
+     "start",
+     "E10041"
+    ]
+   ]
+  },
+  {
+   "employee": "E10041",
+   "course": "COC-100",
+   "assignedDaysAgo": 159,
+   "actions": [
+    [
+     "complete",
+     "E10041",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10042",
+   "course": "DP-101",
+   "assignedDaysAgo": 87,
+   "actions": [
+    [
+     "complete",
+     "E10042",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10042",
+   "course": "IS-101",
+   "assignedDaysAgo": 177,
+   "actions": [
+    [
+     "complete",
+     "E10042",
+     85
+    ]
+   ]
+  },
+  {
+   "employee": "E10042",
+   "course": "COC-100",
+   "assignedDaysAgo": 286,
+   "actions": [
+    [
+     "complete",
+     "E10042",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10043",
+   "course": "DP-101",
+   "assignedDaysAgo": 99,
+   "actions": [
+    [
+     "complete",
+     "E10043",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10043",
+   "course": "IS-101",
+   "assignedDaysAgo": 196,
+   "actions": [
+    [
+     "complete",
+     "E10043",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10043",
+   "course": "COC-100",
+   "assignedDaysAgo": 138,
+   "actions": [
+    [
+     "complete",
+     "E10043",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10044",
+   "course": "DP-101",
+   "assignedDaysAgo": 35,
+   "actions": [
+    [
+     "complete",
+     "E10044",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10044",
+   "course": "IS-101",
+   "assignedDaysAgo": 114,
+   "actions": [
+    [
+     "complete",
+     "E10044",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10044",
+   "course": "COC-100",
+   "assignedDaysAgo": 279,
+   "actions": [
+    [
+     "complete",
+     "E10044",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10045",
+   "course": "DP-101",
+   "assignedDaysAgo": 224,
+   "actions": [
+    [
+     "complete",
+     "E10045",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "E10045",
+   "course": "IS-101",
+   "assignedDaysAgo": 52,
+   "actions": [
+    [
+     "complete",
+     "E10045",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10045",
+   "course": "COC-100",
+   "assignedDaysAgo": 235,
+   "actions": [
+    [
+     "complete",
+     "E10045",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10046",
+   "course": "DP-101",
+   "assignedDaysAgo": 103,
+   "actions": []
+  },
+  {
+   "employee": "E10046",
+   "course": "IS-101",
+   "assignedDaysAgo": 49,
+   "actions": [
+    [
+     "complete",
+     "E10046",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10046",
+   "course": "COC-100",
+   "assignedDaysAgo": 103,
+   "actions": [
+    [
+     "complete",
+     "E10046",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10047",
+   "course": "DP-101",
+   "assignedDaysAgo": 241,
+   "actions": [
+    [
+     "complete",
+     "E10047",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10047",
+   "course": "IS-101",
+   "assignedDaysAgo": 329,
+   "actions": [
+    [
+     "complete",
+     "E10047",
+     83
+    ]
+   ]
+  },
+  {
+   "employee": "E10047",
+   "course": "COC-100",
+   "assignedDaysAgo": 21,
+   "actions": [
+    [
+     "complete",
+     "E10047",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "E10048",
+   "course": "DP-101",
+   "assignedDaysAgo": 127,
+   "actions": [
+    [
+     "complete",
+     "E10048",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10048",
+   "course": "IS-101",
+   "assignedDaysAgo": 292,
+   "actions": [
+    [
+     "start",
+     "E10048"
+    ],
+    [
+     "complete",
+     "E10048",
+     53
+    ]
+   ]
+  },
+  {
+   "employee": "E10048",
+   "course": "COC-100",
+   "assignedDaysAgo": 237,
+   "actions": [
+    [
+     "complete",
+     "E10048",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10049",
+   "course": "DP-101",
+   "assignedDaysAgo": 115,
+   "actions": []
+  },
+  {
+   "employee": "E10049",
+   "course": "IS-101",
+   "assignedDaysAgo": 283,
+   "actions": [
+    [
+     "complete",
+     "E10049",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10049",
+   "course": "COC-100",
+   "assignedDaysAgo": 60,
+   "actions": []
+  },
+  {
+   "employee": "E10050",
+   "course": "DP-101",
+   "assignedDaysAgo": 188,
+   "actions": [
+    [
+     "complete",
+     "E10050",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10050",
+   "course": "IS-101",
+   "assignedDaysAgo": 111,
+   "actions": [
+    [
+     "complete",
+     "E10050",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10050",
+   "course": "COC-100",
+   "assignedDaysAgo": 196,
+   "actions": [
+    [
+     "complete",
+     "E10050",
+     97
+    ]
+   ]
+  },
+  {
+   "employee": "E10051",
+   "course": "DP-101",
+   "assignedDaysAgo": 326,
+   "actions": [
+    [
+     "complete",
+     "E10051",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10051",
+   "course": "IS-101",
+   "assignedDaysAgo": 304,
+   "actions": [
+    [
+     "complete",
+     "E10051",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10051",
+   "course": "COC-100",
+   "assignedDaysAgo": 194,
+   "actions": [
+    [
+     "complete",
+     "E10051",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10052",
+   "course": "DP-101",
+   "assignedDaysAgo": 269,
+   "actions": [
+    [
+     "complete",
+     "E10052",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10052",
+   "course": "IS-101",
+   "assignedDaysAgo": 262,
+   "actions": [
+    [
+     "complete",
+     "E10052",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10052",
+   "course": "COC-100",
+   "assignedDaysAgo": 280,
+   "actions": [
+    [
+     "start",
+     "E10052"
+    ],
+    [
+     "complete",
+     "E10052",
+     0
+    ]
+   ]
+  },
+  {
+   "employee": "E10053",
+   "course": "DP-101",
+   "assignedDaysAgo": 29,
+   "actions": [
+    [
+     "complete",
+     "E10053",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10053",
+   "course": "IS-101",
+   "assignedDaysAgo": 319,
+   "actions": [
+    [
+     "complete",
+     "E10053",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10053",
+   "course": "COC-100",
+   "assignedDaysAgo": 116,
+   "actions": [
+    [
+     "complete",
+     "E10053",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10054",
+   "course": "DP-101",
+   "assignedDaysAgo": 162,
+   "actions": []
+  },
+  {
+   "employee": "E10054",
+   "course": "IS-101",
+   "assignedDaysAgo": 129,
+   "actions": [
+    [
+     "complete",
+     "E10054",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10054",
+   "course": "COC-100",
+   "assignedDaysAgo": 35,
+   "actions": [
+    [
+     "complete",
+     "E10054",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10055",
+   "course": "DP-101",
+   "assignedDaysAgo": 71,
+   "actions": [
+    [
+     "complete",
+     "E10055",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10055",
+   "course": "IS-101",
+   "assignedDaysAgo": 148,
+   "actions": [
+    [
+     "complete",
+     "E10055",
+     85
+    ]
+   ]
+  },
+  {
+   "employee": "E10055",
+   "course": "COC-100",
+   "assignedDaysAgo": 254,
+   "actions": [
+    [
+     "complete",
+     "E10055",
+     84
+    ]
+   ]
+  },
+  {
+   "employee": "E10056",
+   "course": "DP-101",
+   "assignedDaysAgo": 307,
+   "actions": [
+    [
+     "complete",
+     "E10056",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10056",
+   "course": "IS-101",
+   "assignedDaysAgo": 175,
+   "actions": [
+    [
+     "start",
+     "E10056"
+    ]
+   ]
+  },
+  {
+   "employee": "E10056",
+   "course": "COC-100",
+   "assignedDaysAgo": 160,
+   "actions": [
+    [
+     "complete",
+     "E10056",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10057",
+   "course": "DP-101",
+   "assignedDaysAgo": 26,
+   "actions": [
+    [
+     "start",
+     "E10057"
+    ],
+    [
+     "complete",
+     "E10057",
+     61
+    ]
+   ]
+  },
+  {
+   "employee": "E10057",
+   "course": "IS-101",
+   "assignedDaysAgo": 137,
+   "actions": [
+    [
+     "complete",
+     "E10057",
+     88
+    ]
+   ]
+  },
+  {
+   "employee": "E10057",
+   "course": "COC-100",
+   "assignedDaysAgo": 273,
+   "actions": [
+    [
+     "complete",
+     "E10057",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10058",
+   "course": "DP-101",
+   "assignedDaysAgo": 235,
+   "actions": [
+    [
+     "complete",
+     "E10058",
+     96
+    ]
+   ]
+  },
+  {
+   "employee": "E10058",
+   "course": "IS-101",
+   "assignedDaysAgo": 189,
+   "actions": [
+    [
+     "complete",
+     "E10058",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10058",
+   "course": "COC-100",
+   "assignedDaysAgo": 192,
+   "actions": [
+    [
+     "complete",
+     "E10058",
+     81
+    ]
+   ]
+  },
+  {
+   "employee": "E10059",
+   "course": "DP-101",
+   "assignedDaysAgo": 247,
+   "actions": [
+    [
+     "complete",
+     "E10059",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "E10059",
+   "course": "IS-101",
+   "assignedDaysAgo": 209,
+   "actions": [
+    [
+     "start",
+     "E10059"
+    ]
+   ]
+  },
+  {
+   "employee": "E10059",
+   "course": "COC-100",
+   "assignedDaysAgo": 176,
+   "actions": [
+    [
+     "complete",
+     "E10059",
+     80
+    ]
+   ]
+  },
+  {
+   "employee": "E10060",
+   "course": "DP-101",
+   "assignedDaysAgo": 158,
+   "actions": [
+    [
+     "complete",
+     "E10060",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10060",
+   "course": "IS-101",
+   "assignedDaysAgo": 328,
+   "actions": [
+    [
+     "complete",
+     "E10060",
+     81
+    ]
+   ]
+  },
+  {
+   "employee": "E10060",
+   "course": "COC-100",
+   "assignedDaysAgo": 138,
+   "actions": [
+    [
+     "start",
+     "E10060"
+    ],
+    [
+     "complete",
+     "E10060",
+     0
+    ]
+   ]
+  },
+  {
+   "employee": "E10061",
+   "course": "DP-101",
+   "assignedDaysAgo": 136,
+   "actions": [
+    [
+     "complete",
+     "E10061",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10061",
+   "course": "IS-101",
+   "assignedDaysAgo": 224,
+   "actions": [
+    [
+     "complete",
+     "E10061",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10061",
+   "course": "COC-100",
+   "assignedDaysAgo": 248,
+   "actions": [
+    [
+     "complete",
+     "E10061",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10062",
+   "course": "DP-101",
+   "assignedDaysAgo": 33,
+   "actions": [
+    [
+     "complete",
+     "E10062",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10062",
+   "course": "IS-101",
+   "assignedDaysAgo": 112,
+   "actions": [
+    [
+     "complete",
+     "E10062",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10062",
+   "course": "COC-100",
+   "assignedDaysAgo": 277,
+   "actions": [
+    [
+     "start",
+     "E10062"
+    ]
+   ]
+  },
+  {
+   "employee": "E10063",
+   "course": "DP-101",
+   "assignedDaysAgo": 134,
+   "actions": []
+  },
+  {
+   "employee": "E10063",
+   "course": "IS-101",
+   "assignedDaysAgo": 205,
+   "actions": []
+  },
+  {
+   "employee": "E10063",
+   "course": "COC-100",
+   "assignedDaysAgo": 253,
+   "actions": [
+    [
+     "complete",
+     "E10063",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10064",
+   "course": "DP-101",
+   "assignedDaysAgo": 75,
+   "actions": [
+    [
+     "complete",
+     "E10064",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "E10064",
+   "course": "IS-101",
+   "assignedDaysAgo": 174,
+   "actions": [
+    [
+     "start",
+     "E10064"
+    ]
+   ]
+  },
+  {
+   "employee": "E10064",
+   "course": "COC-100",
+   "assignedDaysAgo": 246,
+   "actions": [
+    [
+     "complete",
+     "E10064",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "E10065",
+   "course": "DP-101",
+   "assignedDaysAgo": 256,
+   "actions": [
+    [
+     "complete",
+     "E10065",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10065",
+   "course": "IS-101",
+   "assignedDaysAgo": 269,
+   "actions": [
+    [
+     "start",
+     "E10065"
+    ]
+   ]
+  },
+  {
+   "employee": "E10065",
+   "course": "COC-100",
+   "assignedDaysAgo": 248,
+   "actions": [
+    [
+     "complete",
+     "E10065",
+     93
+    ]
+   ]
+  },
+  {
+   "employee": "E10066",
+   "course": "DP-101",
+   "assignedDaysAgo": 305,
+   "actions": [
+    [
+     "start",
+     "E10066"
+    ],
+    [
+     "complete",
+     "E10066",
+     64
+    ]
+   ]
+  },
+  {
+   "employee": "E10066",
+   "course": "IS-101",
+   "assignedDaysAgo": 161,
+   "actions": [
+    [
+     "start",
+     "E10066"
+    ],
+    [
+     "complete",
+     "E10066",
+     63
+    ]
+   ]
+  },
+  {
+   "employee": "E10066",
+   "course": "COC-100",
+   "assignedDaysAgo": 245,
+   "actions": []
+  },
+  {
+   "employee": "E10067",
+   "course": "DP-101",
+   "assignedDaysAgo": 109,
+   "actions": [
+    [
+     "complete",
+     "E10067",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "E10067",
+   "course": "IS-101",
+   "assignedDaysAgo": 26,
+   "actions": [
+    [
+     "start",
+     "E10067"
+    ],
+    [
+     "complete",
+     "E10067",
+     57
+    ]
+   ]
+  },
+  {
+   "employee": "E10067",
+   "course": "COC-100",
+   "assignedDaysAgo": 132,
+   "actions": [
+    [
+     "start",
+     "E10067"
+    ]
+   ]
+  },
+  {
+   "employee": "X10068",
+   "course": "DP-101",
+   "assignedDaysAgo": 128,
+   "actions": [
+    [
+     "complete",
+     "X10068",
+     82
+    ]
+   ]
+  },
+  {
+   "employee": "X10068",
+   "course": "IS-101",
+   "assignedDaysAgo": 128,
+   "actions": [
+    [
+     "start",
+     "X10068"
+    ],
+    [
+     "complete",
+     "X10068",
+     68
+    ]
+   ]
+  },
+  {
+   "employee": "X10068",
+   "course": "COC-100",
+   "assignedDaysAgo": 128,
+   "actions": [
+    [
+     "complete",
+     "X10068",
+     95
+    ]
+   ]
+  },
+  {
+   "employee": "X10069",
+   "course": "DP-101",
+   "assignedDaysAgo": 114,
+   "actions": [
+    [
+     "complete",
+     "X10069",
+     99
+    ]
+   ]
+  },
+  {
+   "employee": "X10069",
+   "course": "IS-101",
+   "assignedDaysAgo": 114,
+   "actions": [
+    [
+     "complete",
+     "X10069",
+     97
+    ]
+   ]
+  },
+  {
+   "employee": "X10069",
+   "course": "COC-100",
+   "assignedDaysAgo": 114,
+   "actions": [
+    [
+     "complete",
+     "X10069",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "X10070",
+   "course": "DP-101",
+   "assignedDaysAgo": 236,
+   "actions": [
+    [
+     "start",
+     "X10070"
+    ],
+    [
+     "complete",
+     "X10070",
+     70
+    ]
+   ]
+  },
+  {
+   "employee": "X10070",
+   "course": "IS-101",
+   "assignedDaysAgo": 71,
+   "actions": [
+    [
+     "complete",
+     "X10070",
+     86
+    ]
+   ]
+  },
+  {
+   "employee": "X10070",
+   "course": "COC-100",
+   "assignedDaysAgo": 151,
+   "actions": [
+    [
+     "complete",
+     "X10070",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "X10071",
+   "course": "DP-101",
+   "assignedDaysAgo": 150,
+   "actions": []
+  },
+  {
+   "employee": "X10071",
+   "course": "IS-101",
+   "assignedDaysAgo": 25,
+   "actions": [
+    [
+     "complete",
+     "X10071",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "X10071",
+   "course": "COC-100",
+   "assignedDaysAgo": 171,
+   "actions": [
+    [
+     "complete",
+     "X10071",
+     100
+    ]
+   ]
+  },
+  {
+   "employee": "E10072",
+   "course": "DP-101",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10072",
+   "course": "IS-101",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10072",
+   "course": "COC-100",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10073",
+   "course": "DP-101",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10073",
+   "course": "IS-101",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10073",
+   "course": "COC-100",
+   "assignedDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "employee": "E10003",
+   "course": "FIN-210",
+   "assignedDaysAgo": 164,
+   "actions": [
+    [
+     "complete",
+     "E10003",
+     98
+    ]
+   ]
+  },
+  {
+   "employee": "E10022",
+   "course": "FIN-210",
+   "assignedDaysAgo": 59,
+   "actions": [
+    [
+     "complete",
+     "E10022",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10023",
+   "course": "FIN-210",
+   "assignedDaysAgo": 73,
+   "actions": [
+    [
+     "complete",
+     "E10023",
+     96
+    ]
+   ]
+  },
+  {
+   "employee": "E10024",
+   "course": "FIN-210",
+   "assignedDaysAgo": 120,
+   "actions": [
+    [
+     "complete",
+     "E10024",
+     94
+    ]
+   ]
+  },
+  {
+   "employee": "E10009",
+   "course": "FIN-210",
+   "assignedDaysAgo": 111,
+   "actions": [
+    [
+     "complete",
+     "E10009",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10025",
+   "course": "FIN-210",
+   "assignedDaysAgo": 176,
+   "actions": [
+    [
+     "complete",
+     "E10025",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10026",
+   "course": "FIN-210",
+   "assignedDaysAgo": 151,
+   "actions": [
+    [
+     "complete",
+     "E10026",
+     87
+    ]
+   ]
+  },
+  {
+   "employee": "E10027",
+   "course": "FIN-210",
+   "assignedDaysAgo": 113,
+   "actions": [
+    [
+     "complete",
+     "E10027",
+     89
+    ]
+   ]
+  },
+  {
+   "employee": "E10005",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 17,
+   "actions": [
+    [
+     "complete",
+     "E10005",
+     91
+    ]
+   ]
+  },
+  {
+   "employee": "E10041",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 29,
+   "actions": []
+  },
+  {
+   "employee": "E10042",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 23,
+   "actions": [
+    [
+     "complete",
+     "E10042",
+     90
+    ]
+   ]
+  },
+  {
+   "employee": "E10043",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 26,
+   "actions": []
+  },
+  {
+   "employee": "E10044",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 29,
+   "actions": [
+    [
+     "complete",
+     "E10044",
+     92
+    ]
+   ]
+  },
+  {
+   "employee": "E10045",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 53,
+   "actions": []
+  },
+  {
+   "employee": "X10069",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 29,
+   "actions": []
+  },
+  {
+   "employee": "E10012",
+   "course": "PRIV-300",
+   "assignedDaysAgo": 8,
+   "actions": []
+  }
+ ],
+ "requests": [
+  {
+   "requester": "E10028",
+   "beneficiary": "E10028",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Need to follow up on my accounts in the CRM",
+   "createdDaysAgo": 150,
+   "actions": [
+    [
+     "submit",
+     "E10028"
+    ],
+    [
+     "approve",
+     "E10004"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10029",
+   "beneficiary": "E10029",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Need to follow up on my accounts in the CRM",
+   "createdDaysAgo": 212,
+   "actions": [
+    [
+     "submit",
+     "E10029"
+    ],
+    [
+     "approve",
+     "E10004"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10030",
+   "beneficiary": "E10030",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Preparing the quarterly customer review",
+   "createdDaysAgo": 265,
+   "actions": [
+    [
+     "submit",
+     "E10030"
+    ],
+    [
+     "approve",
+     "E10004"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10033",
+   "beneficiary": "E10033",
+   "system": "CRM",
+   "role": "Reader",
+   "justification": "Preparing the quarterly customer review",
+   "createdDaysAgo": 30,
+   "actions": [
+    [
+     "submit",
+     "E10033"
+    ],
+    [
+     "approve",
+     "E10010"
+    ],
+    [
+     "approve",
+     "E10004"
+    ]
+   ]
+  },
+  {
+   "requester": "E10034",
+   "beneficiary": "E10034",
+   "system": "CRM",
+   "role": "Reader",
+   "justification": "Preparing the quarterly customer review",
+   "createdDaysAgo": 5,
+   "actions": [
+    [
+     "submit",
+     "E10034"
+    ]
+   ]
+  },
+  {
+   "requester": "E10035",
+   "beneficiary": "E10035",
+   "system": "CRM",
+   "role": "Reader",
+   "justification": "Need to follow up on my accounts in the CRM",
+   "createdDaysAgo": 13,
+   "actions": [
+    [
+     "submit",
+     "E10035"
+    ],
+    [
+     "approve",
+     "E10010"
+    ]
+   ]
+  },
+  {
+   "requester": "E10033",
+   "beneficiary": "E10033",
+   "system": "DWH",
+   "role": "Analyst",
+   "justification": "Building the sales dashboard for the leadership team",
+   "createdDaysAgo": 10,
+   "actions": [
+    [
+     "submit",
+     "E10033"
+    ],
+    [
+     "approve",
+     "E10010"
+    ]
+   ]
+  },
+  {
+   "requester": "E10034",
+   "beneficiary": "E10034",
+   "system": "DWH",
+   "role": "Analyst",
+   "justification": "Data pipelines for the HR analytics project",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10034"
+    ],
+    [
+     "approve",
+     "E10010"
+    ]
+   ]
+  },
+  {
+   "requester": "E10035",
+   "beneficiary": "E10035",
+   "system": "DWH",
+   "role": "Analyst",
+   "justification": "Building the sales dashboard for the leadership team",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10035"
+    ],
+    [
+     "reject",
+     "E10010",
+     "Please use the shared team role instead"
+    ]
+   ]
+  },
+  {
+   "requester": "E10038",
+   "beneficiary": "E10038",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Need to follow up on my accounts in the CRM",
+   "createdDaysAgo": 8,
+   "actions": [
+    [
+     "submit",
+     "E10038"
+    ],
+    [
+     "cancel",
+     "E10038",
+     "Not needed any more"
+    ]
+   ]
+  },
+  {
+   "requester": "E10039",
+   "beneficiary": "E10039",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Preparing the quarterly customer review",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10039"
+    ],
+    [
+     "approve",
+     "E10011"
+    ],
+    [
+     "approve",
+     "E10004"
+    ],
+    [
+     "revoke",
+     "E10011",
+     "Moved to a different project"
+    ]
+   ]
+  },
+  {
+   "requester": "E10040",
+   "beneficiary": "E10040",
+   "system": "CRM",
+   "role": "Sales user",
+   "justification": "Need to follow up on my accounts in the CRM",
+   "createdDaysAgo": 5,
+   "actions": []
+  },
+  {
+   "requester": "E10022",
+   "beneficiary": "E10022",
+   "system": "ERP",
+   "role": "Invoice clerk",
+   "justification": "Recording supplier invoices for the Vienna office",
+   "createdDaysAgo": 136,
+   "actions": [
+    [
+     "submit",
+     "E10022"
+    ],
+    [
+     "approve",
+     "E10003"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "provision",
+     "SYSTEM"
+    ]
+   ]
+  },
+  {
+   "requester": "E10023",
+   "beneficiary": "E10023",
+   "system": "ERP",
+   "role": "Invoice clerk",
+   "justification": "Monthly closing and reporting",
+   "createdDaysAgo": 57,
+   "actions": [
+    [
+     "submit",
+     "E10023"
+    ],
+    [
+     "approve",
+     "E10003"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "provision",
+     "SYSTEM"
+    ]
+   ]
+  },
+  {
+   "requester": "E10024",
+   "beneficiary": "E10024",
+   "system": "ERP",
+   "role": "Invoice clerk",
+   "justification": "Monthly closing and reporting",
+   "createdDaysAgo": 27,
+   "actions": [
+    [
+     "submit",
+     "E10024"
+    ],
+    [
+     "approve",
+     "E10003"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "provision",
+     "SYSTEM"
+    ]
+   ]
+  },
+  {
+   "requester": "E10025",
+   "beneficiary": "E10025",
+   "system": "ERP",
+   "role": "Reporting",
+   "justification": "Monthly closing and reporting",
+   "createdDaysAgo": 77,
+   "actions": [
+    [
+     "submit",
+     "E10025"
+    ],
+    [
+     "approve",
+     "E10009"
+    ],
+    [
+     "approve",
+     "E10003"
+    ],
+    [
+     "provision",
+     "SYSTEM"
+    ]
+   ]
+  },
+  {
+   "requester": "E10026",
+   "beneficiary": "E10026",
+   "system": "ERP",
+   "role": "Reporting",
+   "justification": "Monthly closing and reporting",
+   "createdDaysAgo": 6,
+   "actions": [
+    [
+     "submit",
+     "E10026"
+    ]
+   ]
+  },
+  {
+   "requester": "E10027",
+   "beneficiary": "E10027",
+   "system": "ERP",
+   "role": "Reporting",
+   "justification": "Monthly closing and reporting",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10027"
+    ],
+    [
+     "approve",
+     "E10009"
+    ]
+   ]
+  },
+  {
+   "requester": "E10016",
+   "beneficiary": "E10016",
+   "system": "HRP",
+   "role": "HR specialist",
+   "justification": "Maintaining personnel records for my business units",
+   "createdDaysAgo": 6,
+   "actions": [
+    [
+     "submit",
+     "E10016"
+    ],
+    [
+     "approve",
+     "E10002"
+    ]
+   ]
+  },
+  {
+   "requester": "E10017",
+   "beneficiary": "E10017",
+   "system": "HRP",
+   "role": "HR specialist",
+   "justification": "Maintaining personnel records for my business units",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10017"
+    ],
+    [
+     "approve",
+     "E10002"
+    ]
+   ]
+  },
+  {
+   "requester": "E10018",
+   "beneficiary": "E10018",
+   "system": "HRP",
+   "role": "HR specialist",
+   "justification": "Maintaining personnel records for my business units",
+   "createdDaysAgo": 8,
+   "actions": [
+    [
+     "submit",
+     "E10018"
+    ],
+    [
+     "reject",
+     "E10002",
+     "Please use the shared team role instead"
+    ]
+   ]
+  },
+  {
+   "requester": "E10041",
+   "beneficiary": "E10041",
+   "system": "GIT",
+   "role": "Maintainer",
+   "justification": "Working on the identity platform repositories",
+   "createdDaysAgo": 14,
+   "actions": [
+    [
+     "submit",
+     "E10041"
+    ],
+    [
+     "cancel",
+     "E10041",
+     "Not needed any more"
+    ]
+   ]
+  },
+  {
+   "requester": "E10042",
+   "beneficiary": "E10042",
+   "system": "GIT",
+   "role": "Maintainer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 13,
+   "actions": [
+    [
+     "submit",
+     "E10042"
+    ],
+    [
+     "approve",
+     "E10005"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "revoke",
+     "E10005",
+     "Moved to a different project"
+    ]
+   ]
+  },
+  {
+   "requester": "E10043",
+   "beneficiary": "E10043",
+   "system": "GIT",
+   "role": "Maintainer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 1,
+   "actions": []
+  },
+  {
+   "requester": "E10046",
+   "beneficiary": "E10046",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 217,
+   "actions": [
+    [
+     "submit",
+     "E10046"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10047",
+   "beneficiary": "E10047",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Working on the identity platform repositories",
+   "createdDaysAgo": 45,
+   "actions": [
+    [
+     "submit",
+     "E10047"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10048",
+   "beneficiary": "E10048",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 184,
+   "actions": [
+    [
+     "submit",
+     "E10048"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10051",
+   "beneficiary": "E10051",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 194,
+   "actions": [
+    [
+     "submit",
+     "E10051"
+    ],
+    [
+     "approve",
+     "E10013"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10052",
+   "beneficiary": "E10052",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Joining the web applications team",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10052"
+    ]
+   ]
+  },
+  {
+   "requester": "E10053",
+   "beneficiary": "E10053",
+   "system": "GIT",
+   "role": "Developer",
+   "justification": "Working on the identity platform repositories",
+   "createdDaysAgo": 4,
+   "actions": [
+    [
+     "submit",
+     "E10053"
+    ],
+    [
+     "approve",
+     "E10013"
+    ]
+   ]
+  },
+  {
+   "requester": "E10041",
+   "beneficiary": "E10041",
+   "system": "CLD",
+   "role": "Contributor (test)",
+   "justification": "Deploying the new test environment",
+   "createdDaysAgo": 7,
+   "actions": [
+    [
+     "submit",
+     "E10041"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10042",
+   "beneficiary": "E10042",
+   "system": "CLD",
+   "role": "Contributor (test)",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10042"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10043",
+   "beneficiary": "E10043",
+   "system": "CLD",
+   "role": "Contributor (test)",
+   "justification": "Deploying the new test environment",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10043"
+    ],
+    [
+     "reject",
+     "E10005",
+     "Please use the shared team role instead"
+    ]
+   ]
+  },
+  {
+   "requester": "E10041",
+   "beneficiary": "E10041",
+   "system": "CLD",
+   "role": "Owner (production)",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 1,
+   "actions": [
+    [
+     "submit",
+     "E10041"
+    ],
+    [
+     "cancel",
+     "E10041",
+     "Not needed any more"
+    ]
+   ]
+  },
+  {
+   "requester": "E10042",
+   "beneficiary": "E10042",
+   "system": "CLD",
+   "role": "Owner (production)",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 15,
+   "actions": [
+    [
+     "submit",
+     "E10042"
+    ],
+    [
+     "approve",
+     "E10005"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "approve",
+     "E10006"
+    ],
+    [
+     "revoke",
+     "E10005",
+     "Moved to a different project"
+    ]
+   ]
+  },
+  {
+   "requester": "E10043",
+   "beneficiary": "E10043",
+   "system": "CLD",
+   "role": "Owner (production)",
+   "justification": "Deploying the new test environment",
+   "createdDaysAgo": 15,
+   "actions": []
+  },
+  {
+   "requester": "E10056",
+   "beneficiary": "E10056",
+   "system": "DWH",
+   "role": "Engineer",
+   "justification": "Building the sales dashboard for the leadership team",
+   "createdDaysAgo": 193,
+   "actions": [
+    [
+     "submit",
+     "E10056"
+    ],
+    [
+     "approve",
+     "E10014"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10057",
+   "beneficiary": "E10057",
+   "system": "DWH",
+   "role": "Engineer",
+   "justification": "Building the sales dashboard for the leadership team",
+   "createdDaysAgo": 171,
+   "actions": [
+    [
+     "submit",
+     "E10057"
+    ],
+    [
+     "approve",
+     "E10014"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10058",
+   "beneficiary": "E10058",
+   "system": "DWH",
+   "role": "Engineer",
+   "justification": "Data pipelines for the HR analytics project",
+   "createdDaysAgo": 238,
+   "actions": [
+    [
+     "submit",
+     "E10058"
+    ],
+    [
+     "approve",
+     "E10014"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10062",
+   "beneficiary": "E10062",
+   "system": "ITSM",
+   "role": "Agent",
+   "justification": "Joining the service desk rotation",
+   "createdDaysAgo": 73,
+   "actions": [
+    [
+     "submit",
+     "E10062"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "approve",
+     "E10015"
+    ],
+    [
+     "provision",
+     "SYSTEM"
+    ]
+   ]
+  },
+  {
+   "requester": "E10063",
+   "beneficiary": "E10063",
+   "system": "ITSM",
+   "role": "Agent",
+   "justification": "Joining the service desk rotation",
+   "createdDaysAgo": 6,
+   "actions": [
+    [
+     "submit",
+     "E10063"
+    ]
+   ]
+  },
+  {
+   "requester": "E10064",
+   "beneficiary": "E10064",
+   "system": "ITSM",
+   "role": "Agent",
+   "justification": "Joining the service desk rotation",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10064"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10041",
+   "beneficiary": "E10041",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "On-call duty needs remote access to servers",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10041"
+    ],
+    [
+     "approve",
+     "E10005"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10042",
+   "beneficiary": "E10042",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "submit",
+     "E10042"
+    ],
+    [
+     "approve",
+     "E10005"
+    ],
+    [
+     "approve",
+     "E10007"
+    ]
+   ]
+  },
+  {
+   "requester": "E10043",
+   "beneficiary": "E10043",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 14,
+   "actions": [
+    [
+     "submit",
+     "E10043"
+    ],
+    [
+     "reject",
+     "E10005",
+     "Please use the shared team role instead"
+    ]
+   ]
+  },
+  {
+   "requester": "E10051",
+   "beneficiary": "E10051",
+   "system": "VPN",
+   "role": "Standard",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 4,
+   "actions": [
+    [
+     "submit",
+     "E10051"
+    ],
+    [
+     "cancel",
+     "E10051",
+     "Not needed any more"
+    ]
+   ]
+  },
+  {
+   "requester": "E10052",
+   "beneficiary": "E10052",
+   "system": "VPN",
+   "role": "Standard",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 7,
+   "actions": [
+    [
+     "submit",
+     "E10052"
+    ],
+    [
+     "approve",
+     "E10013"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "revoke",
+     "E10013",
+     "Moved to a different project"
+    ]
+   ]
+  },
+  {
+   "requester": "E10053",
+   "beneficiary": "E10053",
+   "system": "VPN",
+   "role": "Standard",
+   "justification": "On-call duty needs remote access to servers",
+   "createdDaysAgo": 14,
+   "actions": []
+  },
+  {
+   "requester": "E10046",
+   "beneficiary": "E10046",
+   "system": "CLD",
+   "role": "Reader",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 297,
+   "actions": [
+    [
+     "submit",
+     "E10046"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10047",
+   "beneficiary": "E10047",
+   "system": "CLD",
+   "role": "Reader",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 250,
+   "actions": [
+    [
+     "submit",
+     "E10047"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10048",
+   "beneficiary": "E10048",
+   "system": "CLD",
+   "role": "Reader",
+   "justification": "Investigating production incidents with the platform team",
+   "createdDaysAgo": 137,
+   "actions": [
+    [
+     "submit",
+     "E10048"
+    ],
+    [
+     "approve",
+     "E10012"
+    ],
+    [
+     "approve",
+     "E10005"
+    ]
+   ]
+  },
+  {
+   "requester": "E10059",
+   "beneficiary": "E10059",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "On-call duty needs remote access to servers",
+   "createdDaysAgo": 287,
+   "actions": [
+    [
+     "submit",
+     "E10059"
+    ],
+    [
+     "approve",
+     "E10006"
+    ],
+    [
+     "approve",
+     "E10007"
+    ],
+    [
+     "approve",
+     "E10060"
+    ]
+   ]
+  },
+  {
+   "requester": "E10060",
+   "beneficiary": "E10060",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "On-call duty needs remote access to servers",
+   "createdDaysAgo": 13,
+   "actions": [
+    [
+     "submit",
+     "E10060"
+    ]
+   ]
+  },
+  {
+   "requester": "E10061",
+   "beneficiary": "E10061",
+   "system": "VPN",
+   "role": "Admin network",
+   "justification": "On-call duty needs remote access to servers",
+   "createdDaysAgo": 4,
+   "actions": [
+    [
+     "submit",
+     "E10061"
+    ],
+    [
+     "approve",
+     "E10006"
+    ]
+   ]
+  },
+  {
+   "requester": "E10034",
+   "beneficiary": "E10034",
+   "system": "VPN",
+   "role": "Standard",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10034"
+    ]
+   ]
+  },
+  {
+   "requester": "E10035",
+   "beneficiary": "E10035",
+   "system": "VPN",
+   "role": "Standard",
+   "justification": "Working from home two days a week",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "submit",
+     "E10035"
+    ]
+   ]
+  },
+  {
+   "requester": "E10013",
+   "beneficiary": "E10051",
+   "system": "DWH",
+   "role": "Analyst",
+   "justification": "Needs usage statistics for the redesign",
+   "createdDaysAgo": 2,
+   "actions": [
+    [
+     "submit",
+     "E10013"
+    ]
+   ]
+  }
+ ],
+ "incidents": [
+  {
+   "reporter": "E10033",
+   "title": "CRM shows \"access denied\" on the reports page",
+   "description": "Since Monday I cannot open the pipeline report.",
+   "priority": "P2",
+   "category": "access",
+   "createdDaysAgo": 1,
+   "actions": []
+  },
+  {
+   "reporter": "E10052",
+   "title": "Wrong manager in my employee record",
+   "description": "My manager changed in October, the portal still shows the old one.",
+   "priority": "P4",
+   "category": "employee-data",
+   "createdDaysAgo": 3,
+   "actions": [
+    [
+     "take",
+     "E10002"
+    ]
+   ]
+  },
+  {
+   "reporter": "E10022",
+   "title": "ERP payment approval button missing",
+   "description": "The approve button is greyed out for invoice INV-2291.",
+   "priority": "P1",
+   "category": "access",
+   "createdDaysAgo": 0,
+   "actions": []
+  },
+  {
+   "reporter": "E10042",
+   "title": "VPN disconnects every 10 minutes",
+   "description": "Only from home, office Wi-Fi is fine.",
+   "priority": "P3",
+   "category": "other",
+   "createdDaysAgo": 4,
+   "actions": [
+    [
+     "take",
+     "E10007"
+    ],
+    [
+     "hold",
+     "E10007",
+     "Waiting for the VPN client logs"
+    ]
+   ]
+  },
+  {
+   "reporter": "E10016",
+   "title": "Training DP-101 shows as overdue although completed",
+   "description": "Completed it last week with 92%.",
+   "priority": "P3",
+   "category": "training",
+   "createdDaysAgo": 9,
+   "actions": [
+    [
+     "take",
+     "E10002"
+    ],
+    [
+     "resolve",
+     "E10002",
+     "The completion was recorded on the wrong course version - fixed."
+    ]
+   ]
+  },
+  {
+   "reporter": "E10038",
+   "title": "Cannot request access for my new colleague",
+   "description": "The request form says I can only request for my direct reports.",
+   "priority": "P4",
+   "category": "access",
+   "createdDaysAgo": 12,
+   "actions": [
+    [
+     "take",
+     "E10007"
+    ],
+    [
+     "resolve",
+     "E10007",
+     "Only managers can request for others - your manager has submitted it."
+    ],
+    [
+     "close",
+     "E10038"
+    ]
+   ]
+  }
+ ],
+ "news": [
+  {
+   "title": "Annual access review starts on 1 December",
+   "body": "Every application owner will receive the list of people with access to their application. Please confirm or remove each entry by 15 December.\n\nPrivileged roles are reviewed by the security team as well.",
+   "author": "E10006",
+   "daysAgo": 2,
+   "pinned": true
+  },
+  {
+   "title": "New: ask the assistant",
+   "body": "The chat in the bottom-right corner answers questions about your requests, approvals, trainings and colleagues - in English or Hungarian.",
+   "author": "E10007",
+   "daysAgo": 5,
+   "pinned": false
+  },
+  {
+   "title": "Data protection training renewed",
+   "body": "DP-101 has a new version with updated examples. Everyone whose completion expires this year will get the new version automatically.",
+   "author": "E10002",
+   "daysAgo": 16,
+   "pinned": false
+  },
+  {
+   "title": "Welcome to our new colleagues",
+   "body": "Two new colleagues join the Identity & Access and Sales Analytics teams this month. Managers: please request their access in advance.",
+   "author": "E10002",
+   "daysAgo": 21,
+   "pinned": false
+  }
+ ]
+}

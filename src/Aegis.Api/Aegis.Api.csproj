@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <Description>Aegis REST API (ASP.NET Core, .NET 10).</Description>
+    <UserSecretsId>aegis-api-6f1b2c</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aegis.Infrastructure\Aegis.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Aegis.IntegrationTests" />
+    <InternalsVisibleTo Include="Aegis.PerformanceTests" />
+  </ItemGroup>
+</Project>

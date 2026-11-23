@@ -1,0 +1,79 @@
+name: Backend - build and test
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['frontend/**', '**.md']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    name: Unit and integration tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet restore Aegis.slnx
+      - run: dotnet build Aegis.slnx --no-restore -c Release
+      - name: Unit tests (domain, state machines, assistant, file formats - Moq)
+        run: dotnet test tests/Aegis.UnitTests --no-build -c Release --logger "trx;LogFileName=unit.trx" --collect "XPlat Code Coverage"
+      - name: Integration tests (real API + EF Core + SQLite, every layer)
+        run: dotnet test tests/Aegis.IntegrationTests --no-build -c Release --logger "trx;LogFileName=integration.trx"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: tests/**/TestResults/**
+
+  performance:
+    name: Performance tests (own load framework)
+    runs-on: ubuntu-latest
+    needs: build-test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Load scenarios with thresholds (results in the job summary)
+        env:
+          AEGIS_PERF_USERS: '20'
+          AEGIS_PERF_SECONDS: '15'
+          AEGIS_PERF_OUT: ${{ github.workspace }}/perf-results
+        run: dotnet test tests/Aegis.PerformanceTests -c Release --filter TestCategory=Performance --logger "console;verbosity=normal"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: performance-results
+          path: perf-results/
+
+  sqlserver:
+    name: Schema on SQL Server
+    runs-on: ubuntu-latest
+    needs: build-test
+    services:
+      mssql:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        env:
+          ACCEPT_EULA: 'Y'
+          MSSQL_SA_PASSWORD: Aegis_dev_2026!
+        ports: ['1433:1433']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: Start the API against SQL Server, create the schema, seed, call it
+        env:
+          Database__Provider: SqlServer
+          ConnectionStrings__Aegis: Server=localhost,1433;Database=Aegis;User Id=sa;Password=Aegis_dev_2026!;TrustServerCertificate=True
+          Jobs__Enabled: 'false'
+          ASPNETCORE_URLS: http://localhost:5080
+        run: |
+          for i in $(seq 1 30); do (echo > /dev/tcp/localhost/1433) 2>/dev/null && break; sleep 2; done
+          dotnet run --project src/Aegis.Api -c Release &
+          for i in $(seq 1 60); do curl -sf http://localhost:5080/health && break; sleep 2; done
+          curl -sf -H "X-Aegis-User: E10002" "http://localhost:5080/api/employees?pageSize=3" | tee /dev/stderr | grep -q '"total"'
+          curl -sf -H "X-Aegis-User: E10010" "http://localhost:5080/api/requests?scope=approvals" | grep -q '"items"'

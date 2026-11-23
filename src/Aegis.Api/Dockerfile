@@ -1,0 +1,13 @@
+# Build from the repository root:  docker build -f src/Aegis.Api/Dockerfile -t aegis-api .
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+WORKDIR /src
+COPY . .
+RUN dotnet publish src/Aegis.Api -c Release -o /app
+
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
+WORKDIR /app
+COPY --from=build /app .
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
+USER app
+ENTRYPOINT ["dotnet", "Aegis.Api.dll"]

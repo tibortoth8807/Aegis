@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <!-- Turn on once the first build is clean -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Authors>Tibor Tóth</Authors>
+    <Product>Aegis</Product>
+  </PropertyGroup>
+</Project>

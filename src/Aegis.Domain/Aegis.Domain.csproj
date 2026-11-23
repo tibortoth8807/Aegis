@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Aegis domain: entities and their workflows as state classes. No dependencies.</Description>
+  </PropertyGroup>
+</Project>

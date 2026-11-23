@@ -1,0 +1,14 @@
+bin/
+obj/
+*.user
+.vs/
+.idea/
+TestResults/
+node_modules/
+dist/
+*.db
+*.db-shm
+*.db-wal
+playwright-report/
+test-results/
+perf-results/

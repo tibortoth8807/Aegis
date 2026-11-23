@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Aegis (SQLite)": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "openapi/v1.json",
+      "applicationUrl": "http://localhost:5080",
+      "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "Development" }
+    },
+    "Aegis (SQL Server)": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "openapi/v1.json",
+      "applicationUrl": "http://localhost:5080",
+      "environmentVariables": { "ASPNETCORE_ENVIRONMENT": "SqlServer" }
+    }
+  }
+}

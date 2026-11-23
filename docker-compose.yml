@@ -1,0 +1,35 @@
+# The API on SQL Server, with the web UI talking to it.
+#   docker compose up --build      → UI on http://localhost:5173, API on http://localhost:5080/openapi/v1.json
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Aegis_dev_2026!"
+    ports: ["1433:1433"]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P Aegis_dev_2026! -Q 'select 1' || exit 1"]
+      interval: 5s
+      retries: 30
+
+  api:
+    build: { context: ., dockerfile: src/Aegis.Api/Dockerfile }
+    environment:
+      Database__Provider: SqlServer
+      ConnectionStrings__Aegis: "Server=sql,1433;Database=Aegis;User Id=sa;Password=Aegis_dev_2026!;TrustServerCertificate=True"
+      Cors__Origins__0: http://localhost:5173
+      # Assistant__Provider: ollama
+      # Assistant__Endpoint: http://host.docker.internal:11434
+    ports: ["5080:8080"]
+    depends_on:
+      sql: { condition: service_healthy }
+
+  web:
+    image: node:22-alpine
+    working_dir: /repo/frontend
+    volumes: [".:/repo"]
+    environment:
+      VITE_API_URL: http://localhost:5080
+    command: sh -c "npm install && npx vite --host 0.0.0.0"
+    ports: ["5173:5173"]
+    depends_on: [api]

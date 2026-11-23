@@ -1,0 +1,29 @@
+{
+  "name": "aegis-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Aegis web UI (React + TypeScript). Talks to the .NET API, or runs fully in the browser with a demo API.",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "vite --mode api",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "test": "tsx --test src/demo/*.test.ts",
+    "test:ui": "playwright test",
+    "seed": "tsx ../tools/generate-demo-data.ts"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0"
+  }
+}
